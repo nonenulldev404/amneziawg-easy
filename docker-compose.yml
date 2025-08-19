@@ -12,7 +12,7 @@ services:
       - WG_HOST=raspberrypi.local
       - PASSWORD_HASH=$$2y$$10$$hBCoykrB95WSzuV4fafBzOHWKu9sbyVa34GJr8VV5R/pIelfEMYyG # (нужны двойные $$, хэш 'foobar123'; см. "How_to_generate_an_bcrypt_hash.md" для генерации хеша) - https://github.com/nonenulldev404/amneziawg-easy/blob/AmneziaWG/How_to_generate_an_bcrypt_hash.md
       # - WEBUI_HOST=0.0.0.0 # IP-адрес, к которому привязан веб-интерфейс.
-      # - WG_DEVICE=eth0 # Ethernet-устройство, через которое должен пересылаться трафик AmneziaWG (Wireguard).
+      # - WG_DEVICE=eth0 # Ethernet-устройство, через которое должен пересылаться трафик AmneziaWG (Wireguard) в docker контейнере.
       # - PORT=51821 # Измените TCP-порт для веб-интерфейса, если хотите использовать другой.
       # - WG_PORT=51820 # Если вы меняете WG_PORT, не забудьте также изменить открытый порт PORT. Публичный UDP порт Вашего VPN-сервера. AmneziaWG (Wireguard) будет прослушивать его (в противном случае — порт по умолчанию) внутри контейнера Docker.
       # - WG_CONFIG_PORT=92820 # Порт UDP, используемый в Home Assistant Plugin - подробнее Порт UDP, используемый в Home Assistant Plugin - подробнее https://github.com/nonenulldev404/amneziawg-easy?tab=readme-ov-file#%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D1%8B
